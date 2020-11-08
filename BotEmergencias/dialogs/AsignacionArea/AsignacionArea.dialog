@@ -1,0 +1,82 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Hg5u3z",
+    "name": "AsignacionArea",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "4UsBCq"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "jWZmGP"
+          },
+          "condition": "user.name",
+          "cases": [
+            {
+              "value": "hola, emergencia, necesito ayuda, quiero denunciar un robo",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "UbN7FL"
+                  },
+                  "activity": "${SendActivity_UbN7FL()}"
+                }
+              ]
+            },
+            {
+              "value": "se reporta un accidente de cocina con quemaduras",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "bmRn7z"
+                  },
+                  "activity": "${SendActivity_bmRn7z()}"
+                }
+              ]
+            },
+            {
+              "value": "se cayó un árbol en mi colonia",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "iNabhL"
+                  },
+                  "activity": "${SendActivity_iNabhL()}"
+                }
+              ]
+            },
+            {
+              "value": "hay un accidente de trafico en la via morelos",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "ZZhzit"
+                  },
+                  "activity": "${SendActivity_ZZhzit()}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "AsignacionArea.lg",
+  "recognizer": "AsignacionArea.lu.qna",
+  "id": "AsignacionArea"
+}

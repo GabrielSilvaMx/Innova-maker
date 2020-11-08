@@ -1,0 +1,114 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "lqij58",
+    "name": "Redireccionar",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "dialogoRedireccionar",
+        "description": "",
+        "id": "ZVufJW"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "Gk6v1o"
+          },
+          "cases": [
+            {
+              "actions": [
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "wDc401"
+                  }
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "XlGKHu"
+                  },
+                  "activity": "${SendActivity_XlGKHu()}"
+                }
+              ],
+              "value": "hola mi amor"
+            },
+            {
+              "value": "vendo tacos",
+              "actions": [
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "fdQHDp"
+                  }
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "0xhprr"
+                  },
+                  "activity": "${SendActivity_0xhprr()}"
+                }
+              ]
+            },
+            {
+              "value": "cual es el saldo de mi recibo",
+              "actions": [
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "YVCSvc"
+                  }
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "wGwElo"
+                  },
+                  "activity": "${SendActivity_wGwElo()}"
+                }
+              ]
+            },
+            {
+              "value": "esta es una llamada de prueba",
+              "actions": [
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "xm8mWs"
+                  }
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "z9DHEF"
+                  },
+                  "activity": "${SendActivity_z9DHEF()}"
+                }
+              ]
+            }
+          ],
+          "condition": "user.name"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "Hjms5i"
+          },
+          "activityProcessed": true,
+          "dialog": "AsignacionArea"
+        }
+      ]
+    }
+  ],
+  "generator": "Redireccionar.lg",
+  "recognizer": "Redireccionar.lu.qna",
+  "id": "Redireccionar"
+}

@@ -1,0 +1,15 @@
+[import](common.lg)
+
+
+# SendActivity_859266()
+- bienvenido
+# TextInput_Prompt_mfIe4o()
+- ¿Cual es su emergencia?
+# SendActivity_MMzRbN()
+- calif: #LLamadasFalsas
+# TextInput_InvalidPrompt_mfIe4o()
+- Lo siento, ${this.value} esta no es una emergencia
+# SendActivity_09BfGa()
+- Gracias por llamar ${user.name}
+# SendActivity_8vVkDh()
+- fin de la llamada
